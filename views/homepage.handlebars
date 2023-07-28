@@ -1,0 +1,12 @@
+<!-- Loop over each object in the blogs array -->
+{{#each blogs as |blog| }}
+  <a href="">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{blog.title}}</h5>
+    <p class="card-text">Created on: {{format_date blog.date_created}}
+    </p>
+  </div>
+  </div>
+  </a>
+{{/each}}
